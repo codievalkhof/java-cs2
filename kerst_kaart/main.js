@@ -8,11 +8,7 @@ function RandomColor(){
     let color = `rgb(${r}, ${g}, ${b})`;
     return color;
 }
-// =======================
-// KERSTBOOM
-// =======================
-
-// Boom (driehoek)
+// bladeren kerst boom
 g.beginPath();
 g.moveTo(400, 100);
 g.lineTo(300, 300);
@@ -21,13 +17,13 @@ g.closePath();
 g.fillStyle = "green";
 g.fill();
 
-// Stam (vierkant)
+// Stam 
 g.beginPath();
 g.rect(370, 300, 60, 80);
 g.fillStyle = "brown";
 g.fill();
 
-// Kerstballen (8 cirkels)
+// Kerstballen
 g.beginPath();
 g.arc(400, 170, 8, 0, Math.PI * 2);
 g.fillStyle = RandomColor()
@@ -81,7 +77,7 @@ g.beginPath();
 g.arc(400, 180, 8, 0, Math.PI * 2);
 g.fillStyle = RandomColor();
 g.fill();
-// Piek (driehoek)
+// gelen piek
 g.beginPath();
 g.moveTo(400, 70);
 g.lineTo(390, 100);
@@ -91,11 +87,7 @@ g.fillStyle = "yellow";
 g.fill();
 
 
-// =======================
-// 4 KERSTHUISJES
-// =======================
-
-// Huis 1
+// huisjes
 g.beginPath();
 g.rect(100, 400, 80, 60);
 g.fillStyle = "lightblue";
@@ -109,7 +101,6 @@ g.closePath();
 g.fillStyle = "red";
 g.fill();
 
-// Huis 2
 g.beginPath();
 g.rect(220, 400, 80, 60);
 g.fillStyle = "lightblue";
@@ -123,7 +114,6 @@ g.closePath();
 g.fillStyle = "red";
 g.fill();
 
-// Huis 3
 g.beginPath();
 g.rect(520, 400, 80, 60);
 g.fillStyle = "lightblue";
@@ -137,7 +127,6 @@ g.closePath();
 g.fillStyle = "red";
 g.fill();
 
-// Huis 4
 g.beginPath();
 g.rect(640, 400, 80, 60);
 g.fillStyle = "lightblue";
@@ -152,9 +141,7 @@ g.fillStyle = "red";
 g.fill();
 
 
-// =======================
-// TEKST
-// =======================
+// merry christmas txt
 g.fillStyle = "black";
 g.font = "40px Arial";
 g.fillText("Merry Christmas", 250, 550);
